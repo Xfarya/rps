@@ -1,8 +1,10 @@
 require 'sinatra/base'
+require "sinatra"
+require "sinatra/reloader"
 
 class RPS < Sinatra::Base
-
-  enable :sessions
+    register Sinatra::Reloader
+    enable :sessions
 
   get '/' do
     erb :index
