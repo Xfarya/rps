@@ -1,0 +1,31 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/faryahussain/Makers/rps/app.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/faryahussain/Makers/rps/spec/features/app_run_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1634997142
+  }
+}
