@@ -12,7 +12,17 @@
           1,
           null,
           1,
-          2,
+          3,
+          null,
+          null,
+          1,
+          3,
+          3,
+          null,
+          null,
+          1,
+          3,
+          3,
           null,
           null,
           1,
@@ -23,7 +33,7 @@
           1,
           2,
           2,
-          null,
+          2,
           null,
           null,
           1,
@@ -33,9 +43,9 @@
       "/Users/faryahussain/Makers/rps/spec/web_helpers.rb": {
         "lines": [
           1,
-          2,
-          2,
-          2,
+          3,
+          3,
+          3,
           null
         ]
       },
@@ -45,10 +55,7 @@
           1,
           1,
           1,
-          null,
-          null,
-          null,
-          null,
+          1,
           null,
           null
         ]
@@ -62,8 +69,19 @@
           null,
           null
         ]
+      },
+      "/Users/faryahussain/Makers/rps/spec/features/opponent_choice_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1635001474
+    "timestamp": 1635003826
   }
 }

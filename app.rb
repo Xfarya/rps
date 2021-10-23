@@ -27,9 +27,9 @@ class RPS < Sinatra::Base
 
   get '/chosen' do
     @choice = session[:choose]
+    @opponent_choice = "Paper"
     erb :chosen
   end
-
 
   run! if app_file == $0
 end

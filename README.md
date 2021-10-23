@@ -7,3 +7,7 @@ I want to enter my name and see it displayed
 As a player
 So I can attack my opponent
 I would like to be able to select a weapon
+
+As a player
+So I can know if I have won the game
+I would like to see my opponent's choice
