@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-10-23T14:52:22+01:00">2021-10-23T14:52:22+01:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-10-23T15:03:22+01:00">2021-10-23T15:03:22+01:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -43,8 +43,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>9</b> relevant lines,
-    <span class="green"><b>9</b> lines covered</span> and
+    <b>14</b> relevant lines,
+    <span class="green"><b>14</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -73,20 +73,20 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#d4c3a210789c8cb9e4947f974165d1898e8e9d98" class="src_link" title="app.rb">app.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">10</td>
-            <td class="cell--number">5</td>
-            <td class="cell--number">5</td>
+            <td class="cell--number">16</td>
+            <td class="cell--number">8</td>
+            <td class="cell--number">8</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#c1b7a508e319a4546c1c551bce29dcee49c70480" class="src_link" title="spec/features/app_run_spec.rb">spec/features/app_run_spec.rb</a></td>
+            <td class="strong t-file__name"><a href="#e43b7b7391ae50d7995b618834d60a7d7554619d" class="src_link" title="spec/features/enter_player_spec.rb">spec/features/enter_player_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">8</td>
             <td class="cell--number">6</td>
-            <td class="cell--number">4</td>
-            <td class="cell--number">4</td>
+            <td class="cell--number">6</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -123,8 +123,8 @@
     
 
     <div class="t-line-summary">
-      <b>5</b> relevant lines.
-      <span class="green"><b>5</b> lines covered</span> and
+      <b>8</b> relevant lines.
+      <span class="green"><b>8</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -197,7 +197,7 @@
 
             
 
-            <code class="ruby">    &#39;Testing infrastructure working!&#39;</code>
+            <code class="ruby">    erb :index</code>
           </li>
         </div>
       
@@ -230,12 +230,78 @@
 
             
 
+            <code class="ruby">  post &#39;/&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="10">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    @player = params[:player]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="11">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    erb :play</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="15">
+            <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">  run! if app_file == $0</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="10">
+          <li class="never" data-hits="" data-linenumber="16">
             
             
 
@@ -250,9 +316,9 @@
 </div>
 
       
-        <div class="source_table" id="c1b7a508e319a4546c1c551bce29dcee49c70480">
+        <div class="source_table" id="e43b7b7391ae50d7995b618834d60a7d7554619d">
   <div class="header">
-    <h3>spec/features/app_run_spec.rb</h3>
+    <h3>spec/features/enter_player_spec.rb</h3>
     <h4>
       <span class="green">
   100.0%
@@ -264,8 +330,8 @@
     
 
     <div class="t-line-summary">
-      <b>4</b> relevant lines.
-      <span class="green"><b>4</b> lines covered</span> and
+      <b>6</b> relevant lines.
+      <span class="green"><b>6</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -283,7 +349,7 @@
 
             
 
-            <code class="ruby">feature &#39;Testing infrastructure&#39; do</code>
+            <code class="ruby">feature &#39;Entering player name&#39; do</code>
           </li>
         </div>
       
@@ -294,7 +360,7 @@
 
             
 
-            <code class="ruby">  scenario &#39;Can run app and check page contant&#39; do</code>
+            <code class="ruby">  scenario &#39;Can fill in name, submit and view the name&#39; do</code>
           </li>
         </div>
       
@@ -316,12 +382,34 @@
 
             
 
-            <code class="ruby">    expect(page).to have_content &#39;Testing infrastructure working!&#39;</code>
+            <code class="ruby">    fill_in :player, with: &#39;Dave&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="5">
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_button &#39;Submit&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(page).to have_content &#39;Dave&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="7">
             
             
 
@@ -332,7 +420,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="6">
+          <li class="never" data-hits="" data-linenumber="8">
             
             
 

@@ -3,8 +3,14 @@ require 'sinatra/base'
 class RPS < Sinatra::Base
 
   get '/' do
-    'Testing infrastructure working!'
+    erb :index
   end
+
+  post '/' do
+    @player = params[:player]
+    erb :play
+  end
+
 
   run! if app_file == $0
 end

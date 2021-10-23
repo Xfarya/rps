@@ -12,11 +12,19 @@
           null,
           null,
           1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
           null
         ]
       },
-      "/Users/faryahussain/Makers/rps/spec/features/app_run_spec.rb": {
+      "/Users/faryahussain/Makers/rps/spec/features/enter_player_spec.rb": {
         "lines": [
+          1,
+          1,
           1,
           1,
           1,
@@ -26,6 +34,6 @@
         ]
       }
     },
-    "timestamp": 1634997142
+    "timestamp": 1634997802
   }
 }
