@@ -80,8 +80,34 @@
           null,
           null
         ]
+      },
+      "/Users/faryahussain/Makers/rps/spec/player_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          2,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/faryahussain/Makers/rps/lib/player.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1635003826
+    "timestamp": 1635004511
   }
 }
