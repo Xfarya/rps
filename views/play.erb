@@ -1,1 +1,10 @@
-<%= @player %> vs. computer
+<% if @player == "" %> Anonymous vs. Computer
+<%else %> <%= @player %> vs. Computer <%end%>
+
+<form action="/play" method="post">
+<input type="submit" value="Rock" name="choose">
+<input type="submit" value="Paper" name="choose">
+<input type="submit" value="Scissors" name="choose">
+<input type="submit" value="Spock" name="choose">
+<input type="submit" value="Lizard" name="choose">
+</form>

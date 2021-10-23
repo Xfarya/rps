@@ -8,25 +8,48 @@
           1,
           null,
           1,
-          null,
-          1,
-          null,
           1,
           1,
           null,
-          null,
           1,
-          1,
-          1,
+          2,
           null,
           null,
           1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/faryahussain/Makers/rps/spec/web_helpers.rb": {
+        "lines": [
+          1,
+          2,
+          2,
+          2,
+          null
+        ]
+      },
+      "/Users/faryahussain/Makers/rps/spec/features/choose_weapon_spec.rb": {
+        "lines": [
+          1,
+          1,
           1,
           1,
           null,
           null,
           null,
-          1,
+          null,
+          null,
           null
         ]
       },
@@ -36,13 +59,11 @@
           1,
           1,
           1,
-          1,
-          1,
           null,
           null
         ]
       }
     },
-    "timestamp": 1634999701
+    "timestamp": 1635001474
   }
 }
