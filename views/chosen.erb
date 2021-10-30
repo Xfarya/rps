@@ -1,2 +1,5 @@
-<%= @game.player.name %> chose <%= @choice %>
-<%= @game.computer.name %> opponent choice <%= @game.c_choice %>
+<% if @player == "" %> 
+You chose <%= @choice %>
+<%else %> 
+<%= @player %> chose <%= @choice %>
+<%end%>
