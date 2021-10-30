@@ -5,9 +5,10 @@ require "./lib/game"
 require "./lib/player"
 
 class RPS < Sinatra::Base
+    configure :development do
     register Sinatra::Reloader
-    enable :sessions
-
+  end
+  
   get '/' do
     erb :index
   end
@@ -30,8 +31,10 @@ class RPS < Sinatra::Base
  get '/chosen' do
     @choice = $choice.choice
     @player = $player.name
+    @opp = $choice.winner
     erb :chosen
   end
+
 
   run! if app_file == $0
 end

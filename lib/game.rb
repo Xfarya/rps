@@ -1,25 +1,23 @@
 class Game
 
-  attr_accessor :choice
+  attr_accessor :choice, :opponent
 
   def initialize(choice)
     @choice = choice
+    opponent_choice
   end
 
-  # def self.create()
-  #   @game = Game.new(@players[0], @p_choice, @players[1], @c_choice)
-  # end
+  def opponent_choice
+     @opponent = ["Rock", "Paper", "Scissors"].sample
+  end
 
-  # def self.instance
-  #   @game
-  # end
-
-  # def winner
-  #   wins = { "Rock" => "Scissors", "Scissors" => "Paper", "Paper" => "Rock" }
-  #   case
-  #     when wins[@p_choice] == @c_choice then "#{@players[0]} wins!"
-  #     when wins[@c_choice] == @p_choice then "#{@players[1]} wins!"
-  #   end
-  # end
+  def winner
+    wins = { "Rock" => "Scissors", "Scissors" => "Paper", "Paper" => "Rock" }
+    case
+      when @choice == @opponent then return "It's a draw!"
+      when wins[@choice] == @opponent then return "You win!"
+      when wins[@opponent] == @choice then return "Computer wins!"
+    end
+  end
 
 end
