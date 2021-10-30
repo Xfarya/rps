@@ -8,7 +8,7 @@ class RPS < Sinatra::Base
     configure :development do
     register Sinatra::Reloader
   end
-  
+
   get '/' do
     erb :index
   end
@@ -32,9 +32,9 @@ class RPS < Sinatra::Base
     @choice = $choice.choice
     @player = $player.name
     @opp = $choice.winner
+    @opp_choice = $choice.opponent
     erb :chosen
   end
-
 
   run! if app_file == $0
 end
