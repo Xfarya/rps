@@ -8,7 +8,7 @@ class Game
   end
 
   def opponent_choice
-     @opponent = ["Rock", "Paper", "Scissors"].sample
+     @opponent = ["Rock", "Paper", "Scissors", "Spock", "Lizard"].sample
   end
 
 
@@ -21,11 +21,14 @@ class Game
   end
 
   def winner
-    wins = { "Rock" => "Scissors", "Scissors" => "Paper", "Paper" => "Rock" }
-    case
-      when @choice == @opponent then return "It's a draw!"
-      when wins[@choice] == @opponent then return "You win!"
-      when wins[@opponent] == @choice then return "Computer wins!"
+    winning = { "Rock" => "Scissors", "Spock" => "Rock", "Paper" => "Spock",  "Lizard" => "Paper", "Scissors" => "Lizard", "Spock" => "Scissors", "Rock" => "Lizard", "Lizard" => "Spock", "Scissors" => "Paper", "Paper" => "Rock" }
+    if @choice == @opponent
+      "it's a draw"
+    elsif
+      winning[@choice] == @opponent 
+      "You win!"      
+    else
+      "Computer wins!" 
     end
   end
 
