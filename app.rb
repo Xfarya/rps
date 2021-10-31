@@ -8,18 +8,21 @@ class RPS < Sinatra::Base
     configure :development do
     register Sinatra::Reloader
   end
+    before do
+    @player = Player.instance
+  end
 
   get '/' do
     erb :index
   end
 
   post '/names' do
-    $player = Player.new(params[:player])
+    player = Player.new(params[:player]).name
+    @player = Player.create(player)
     redirect '/play'
   end
 
   get '/play' do
-    @player = $player.name
     erb :play
   end
 
@@ -30,7 +33,6 @@ class RPS < Sinatra::Base
 
  get '/chosen' do
     @choice = $choice.choice
-    @player = $player.name
     @opp = $choice.winner
     @opp_choice = $choice.opponent
     erb :chosen

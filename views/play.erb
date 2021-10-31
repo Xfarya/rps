@@ -1,5 +1,5 @@
-<% if @player == "" %> Anonymous vs. Computer
-<%else %> <%= @player %> vs. Computer <%end%>
+<% if @player1 == "" %> Anonymous vs. Computer
+<%else %> <%= @player.name %> vs. Computer <%end%> 
 
 <form action="/play" method="post">
 <input type="submit" value="Rock" name="choose">
