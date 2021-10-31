@@ -21,9 +21,19 @@ class Game
   end
 
   def winner
-    winning = { "Rock" => "Scissors", "Spock" => "Rock", "Paper" => "Spock",  "Lizard" => "Paper", "Scissors" => "Lizard", "Spock" => "Scissors", "Rock" => "Lizard", "Lizard" => "Spock", "Scissors" => "Paper", "Paper" => "Rock" }
+    winning = { "Rock" => "Scissors", 
+      "Spock" => "Rock", 
+      "Paper" => "Spock",  
+      "Lizard" => "Paper", 
+      "Scissors" => "Lizard", 
+      "Spock" => "Scissors", 
+      "Rock" => "Lizard", 
+      "Lizard" => "Spock", 
+      "Scissors" => "Paper", 
+      "Paper" => "Rock" 
+    }
     if @choice == @opponent
-      "it's a draw"
+      "It's a draw"
     elsif
       winning[@choice] == @opponent 
       "You win!"      

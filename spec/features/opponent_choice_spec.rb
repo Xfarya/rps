@@ -5,4 +5,5 @@ feature "Opponent's choice" do
     click_button("Rock")
     expect(page).to have_content "Your opponent chose"
   end
+  
 end
