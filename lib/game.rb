@@ -11,6 +11,15 @@ class Game
      @opponent = ["Rock", "Paper", "Scissors"].sample
   end
 
+
+  def self.create(choice)
+      @game = Game.new(choice)
+  end
+
+  def self.instance
+    @game
+  end
+
   def winner
     wins = { "Rock" => "Scissors", "Scissors" => "Paper", "Paper" => "Rock" }
     case

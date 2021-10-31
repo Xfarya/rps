@@ -10,6 +10,7 @@ class RPS < Sinatra::Base
   end
     before do
     @player = Player.instance
+    @game = Game.instance
   end
 
   get '/' do
@@ -27,14 +28,14 @@ class RPS < Sinatra::Base
   end
 
   post '/play' do
-    $choice = Game.new(params[:choose])
+    choice = Game.new(params[:choose]).choice
+    @game = Game.create(choice)
     redirect '/chosen'
   end
 
  get '/chosen' do
-    @choice = $choice.choice
-    @opp = $choice.winner
-    @opp_choice = $choice.opponent
+    @opp = @game.winner
+    @opp_choice = @game.opponent
     erb :chosen
   end
 

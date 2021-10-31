@@ -1,8 +1,8 @@
-<% if @player == "" %> 
+<% if @player.name == "" %> 
 You chose <%= @choice %>
 <%else %> 
-<%= @player %> chose <%= @choice %>
+<%= @player.name %> chose <%= @game.choice %>
 <%end %>
 
-Your opponent chose <%= @opp_choice %>
+your opponent chose <%= @opp_choice %>
 <%= @opp %>
