@@ -1,9 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet"
+       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+       crossorigin="anonymous"
+     />
+  </head>
+<body>
+
+<section id='box'>
+<h1>enter your name here<h1>
+<form id='game'action="/names" method="post">
+<input class="b1" type = "text" name="player">
+<input class="b1" type="submit" value="Submit">
+</form>
+    </form>
+<br>
+<br>
+<section id='competitors'>
+<% if @player.name == "" %> Anonymous vs. Computer
+<%else %> <%= @player.name %> vs. Computer <%end%> 
+</section>
+<section id='choices'>
+<form action="/play" method="post">
+<input class = "b2" type="submit" value="Rock" name="choose">
+<input class = "b2" type="submit" value="Paper" name="choose">
+<input class = "b2" type="submit" value="Scissors" name="choose">
+<input class = "b2" type="submit" value="Spock" name="choose">
+<input class = "b2" type="submit" value="Lizard" name="choose">
+</form>
+</section>
+<br>
+<section id = "result">
 <% if @player.name == "" %> 
 You chose <%= @choice %>
 <%else %> 
-<%= @player.name %> chose <%= @game.choice %>
+<span class = "b1"><%= @player.name %> </span> chose <%= @game.choice %>
 <%end %>
-
+<br>
 Your opponent chose <%= @opp_choice %>
+</section>
+<br>
+<section>
 <%= @opp %>
+<br>
+<a href = "/">Play Again?</a>
+</section>
 
+</section>
+</body>
+</html>

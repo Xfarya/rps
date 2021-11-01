@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Fruktur&display=swap");
+
+body {
+}
+
+form {
+  text-align: center;
+  line-height: 30px;
+  height: 80%;
+  overflow: auto;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Fruktur", cursive;
+  color: rgb(168, 211, 218);
+}
+
+form {
+  text-align: center;
+  font-family: "Fruktur", cursive;
+}
+
+#box {
+  width: 80%;
+  margin: 10% auto;
+  height: 30vh;
+  background-color: rgb(181, 144, 202);
+  border-radius: 40px;
+}
+
+#name_box {
+  border-radius: 8px;
+  width: 150px;
+  height: 3vh;
+  font-family: courier new;
+  text-align: center;
+  background-color: #fff9e6;
+  border: 2px solid #66d9ff;
+}
+
+.b1 {
+  width: 50%;
+  text-align: center;
+  background-color: rgb(245, 202, 179);
+  margin: 5px;
+}
+
+.b2 {
+  width: 30%;
+  text-align: center;
+  background-color: rgb(245, 202, 179);
+  margin: 5px;
+  height: 10vh;
+}
+
+#game {
+  font-size: 10px;
+  width: 100%;
+}
+
+input {
+  border-radius: 8px;
+  height: 5vh;
+  width: 80px;
+  font-family: courier new;
+  background-color: #fff9e6;
+  border: 2px solid #ffcccc;
+}
+
+/* input {
+} */
+
+button {
+  border-radius: 8px;
+  height: 5vh;
+  width: 80px;
+  background-color: #fff9e6;
+  border: 2px solid #ffcccc;
+}
+
+button:hover {
+  opacity: 0.6;
+  color: rgb(243, 236, 184);
+}

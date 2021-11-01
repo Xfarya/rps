@@ -1,10 +1,36 @@
-<% if @player1 == "" %> Anonymous vs. Computer
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet"
+       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+       crossorigin="anonymous"
+     />
+ </head>
+ <body>
+ <section id='box'>
+<h1>enter your name here<h1>
+<form id='game'action="/names" method="post">
+<input class="b1" type = "text" name="player">
+<input class="b1" type="submit" value="Submit">
+</form>
+    </form>
+    <br>
+<br>
+
+<% if @player.name == "" %> Anonymous vs. Computer
 <%else %> <%= @player.name %> vs. Computer <%end%> 
 
 <form action="/play" method="post">
-<input type="submit" value="Rock" name="choose">
-<input type="submit" value="Paper" name="choose">
-<input type="submit" value="Scissors" name="choose">
-<input type="submit" value="Spock" name="choose">
-<input type="submit" value="Lizard" name="choose">
+<input class = "b2" type="submit" value="Rock" name="choose">
+<input class = "b2" type="submit" value="Paper" name="choose">
+<input class = "b2" type="submit" value="Scissors" name="choose">
+<input class = "b2" type="submit" value="Spock" name="choose">
+<input class = "b2" type="submit" value="Lizard" name="choose">
 </form>
+</section>
+    
+</body>
+</html>

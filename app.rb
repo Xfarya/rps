@@ -36,6 +36,7 @@ class RPS < Sinatra::Base
  get '/chosen' do
     @opp = @game.winner
     @opp_choice = @game.opponent
+    @choice = @game.choice
     erb :chosen
   end
 
