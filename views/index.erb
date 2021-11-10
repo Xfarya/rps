@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -11,15 +10,67 @@
      />
  </head>
 <body>
-<section id='box'>
-<h1>enter your name here<h1>
-<form id='game'action="/names" method="post">
-<input class="b1" type = "text" name="player">
-<input class="b1" type="submit" value="Submit">
-</form>
-    </form>
+<div class="row">
+  <div class="column">
+      <div class = "name"><div>enter your name here</div>
+  <form id='game'action="/names" method="post">
+    <input class="nameform" type = "text" name="player">
+    <input class="nameform" type="submit" value="Submit">
+  </form></div>
+  </div>
+  <div class="column">
+  </div>
+  </div>
+</div>
 
-    </section>
+<div class="row">
+  <div class="column1">
+    <button class ="weaponbuttons" type="submit" name="choose" value="Rock" style="
+    background: transparent;
+    border: none;
+">
+      <img height="150px" width="150px" src="/images/rock_rps.svg" alt="Rock">
+    </button>
+  </div>
+  <div class="column1">
+    <button class ="weaponbuttons" type="submit" name="choose" value="Paper" style="
+    background: transparent;
+    border: none;
+">
+      <img height="150px" width="150px" src="/images/paper_rps.svg" alt="Paper">
+    </button>
+  </div>
+   <div class="column1">
+    <button class ="weaponbuttons" type="submit" name="choose" value="Scissors" style="
+    background: transparent;
+    border: none;
+">
+      <img height="150px" width="150px" src="/images/scissors_rps.svg" alt="Scissors" style="
+    background: transparent;
+    border: none;
+">
+  </button>
+  </div>
+  <div class="column1">
+  <button class="weaponbuttons" type="submit" name="choose" value="Lizard" style="
+    background: transparent;
+    border: none;
+"><img height="150px" width="150px" src="/images/lizard_rps.svg" alt="Lizard" style="
+    background: transparent;
+    border: none;
+">
+    </button>
+  </div>
+   <div class="column1">
+    <button class ="weaponbuttons" type="submit" name="choose" value="Spock" style="
+    background: transparent;
+    border: none;
+">
+      <img height="150px" width="150px" src="/images/spock_rps.svg" alt="Spock">
+    </button>
+  </div>
+</div>
+
 
 
   </body>

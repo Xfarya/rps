@@ -11,76 +11,95 @@
   </head>
 <body>
 
-<section id='box'>
-<h1>enter your name here<h1>
-<form id='game'action="/names" method="post">
-<input class="b1" type = "text" name="player">
-<input class="b1" type="submit" value="Submit">
-</form>
-    </form>
-<br>
-<br>
-<section id='competitors'>
-<% if @player.name == "" %> Anonymous vs. Computer
-<%else %> <%= @player.name %> vs. Computer <%end%> 
-</section>
-<section id='choices'>
-<div class="grid-container"> 
+<div class="row">
+  <div class="column">
+      <div class = "name"><div>enter your name here</div>
+  <form id='game'action="/names" method="post">
+    <input class="nameform" type = "text" name="player">
+    <input class="nameform" type="submit" value="Submit">
+  </form></div>
+  </div>
+  <div class="column">
+     <div class ="play">
+    <% if @player.name == "" %> Anonymous vs. Computer
+    <%else %> <%= @player.name %> vs. Computer <%end%> 
+  </div>
+  </div>
+</div>
 
-<div class="grid-item">
+<div class="row">
+  <div class="column1">
   <form action="/play" method="post">
-    <button class ="weaponbuttons" type="submit" name="choose" value="Rock">
+    <button class ="weaponbuttons" type="submit" name="choose" value="Rock" style="
+    background: transparent;
+    border: none;
+">
       <img height="150px" width="150px" src="/images/rock_rps.svg" alt="Rock">
     </button>
   </form>
-</div>
-<div class="grid-item">
-  <form action="/play" method="post">
-    <button class ="weaponbuttons" type="submit" name="choose" value="Paper">
+  </div>
+  <div class="column1">
+      <form action="/play" method="post">
+    <button class ="weaponbuttons" type="submit" name="choose" value="Paper" style="
+    background: transparent;
+    border: none;
+">
       <img height="150px" width="150px" src="/images/paper_rps.svg" alt="Paper">
     </button>
   </form>
-</div>
-<div class="grid-item">
-  <form action="/play" method="post">
-    <button class ="weaponbuttons" type="submit" name="choose" value="Scissors">
+  </div>
+   <div class="column1">
+    <form action="/play" method="post">
+    <button class ="weaponbuttons" type="submit" name="choose" value="Scissors" style="
+    background: transparent;
+    border: none;
+">
       <img height="150px" width="150px" src="/images/scissors_rps.svg" alt="Scissors">
     </button>
   </form>
-</div>
-<div class="grid-item">
-  <form action="/play" method="post">
-    <button class ="weaponbuttons" type="submit" name="choose" value="Lizard">
+  </div>
+  <div class="column1">
+    <form action="/play" method="post">
+    <button class ="weaponbuttons" type="submit" name="choose" value="Lizard" style="
+    background: transparent;
+    border: none;
+">
       <img height="150px" width="150px" src="/images/lizard_rps.svg" alt="Lizard">
     </button>
   </form>
-</div>
-<div class="grid-item">
-  <form action="/play" method="post">
-    <button class ="weaponbuttons" type="submit" name="choose" value="Spock">
+  </div>
+   <div class="column1">
+     <form action="/play" method="post">
+    <button class ="weaponbuttons" type="submit" name="choose" value="Spock" style="
+    background: transparent;
+    border: none;
+">
       <img height="150px" width="150px" src="/images/spock_rps.svg" alt="Spock">
     </button>
   </form>
+  </div>
 </div>
-</div>
-</section>
-<br>
-<section id = "result">
-<% if @player.name == "" %> 
-You chose <%= @choice %>
-<%else %> 
-<span class = "b1"><%= @player.name %> </span> chose <img height="150px" width="150px" src="/images/<%= @game.choice %>_rps.svg" 
-<%end %>
-<br>
-Your opponent chose <img height="150px" width="150px" src="/images/<%= @opp_choice %>_rps.svg" 
-</section>
-<br>
-<section>
-<%= @opp %>
-<br>
-<a href = "/play">Play Again?</a>
-</section>
 
-</section>
+<div class="row">
+  <div class="column">
+    <% if @player.name == "" %> 
+      You chose <%= @choice %>
+    <%else %> 
+    <span class = "b1"><%= @player.name %> </span> chose <img height="150px" width="150px" src="/images/<%= @game.choice %>_rps.svg"> 
+<%end %>
+  </div>
+  <div class="column">
+     Your opponent chose <img height="150px" width="150px" src="/images/<%= @opp_choice %>_rps.svg"> 
+  </div>
+</div>
+
+
+ <div class="column2">
+     <%= @opp %>
+  </div>
+<div class="column2">
+   <a href = "/play">Play Again?</a>
+  </div>
+
 </body>
 </html>

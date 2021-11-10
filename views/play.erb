@@ -10,58 +10,78 @@
      />
  </head>
  <body>
- <section id='box'>
-<h1>enter your name here<h1>
-<form id='game'action="/names" method="post">
-<input class="b1" type = "text" name="player">
-<input class="b1" type="submit" value="Submit">
-</form>
-    </form>
-    <br>
-<br>
 
-<% if @player.name == "" %> Anonymous vs. Computer
-<%else %> <%= @player.name %> vs. Computer <%end%> 
+<div class="row">
+  <div class="column">
+      <div class = "name"><div>enter your name here</div>
+  <form id='game'action="/names" method="post">
+    <input class="nameform" type = "text" name="player">
+    <input class="nameform" type="submit" value="Submit">
+  </form></div>
+  </div>
+  <div class="column">
+     <div class ="play">
+    <% if @player.name == "" %> Anonymous vs. Computer
+    <%else %> <%= @player.name %> vs. Computer <%end%> 
+  </div>
+  </div>
+</div>
 
-<div class="grid-container"> 
-
-<div class="grid-item">
+<div class="row">
+  <div class="column1">
   <form action="/play" method="post">
-    <button class ="weaponbuttons" type="submit" name="choose" value="Rock">
-      <img height="150px" width="150px" src="/images/rock_rps.svg" alt="Rock">
+    <button class ="weaponbuttons" type="submit" name="choose" value="Rock" style="
+    background: transparent;
+    border: none;
+">
+      <img height="150px" width="150px" src="/images/rock_rps.svg" alt="Rock" style="
+    background: transparent;
+    border: none;
+">
     </button>
   </form>
-</div>
-<div class="grid-item">
-  <form action="/play" method="post">
-    <button class ="weaponbuttons" type="submit" name="choose" value="Paper">
+  </div>
+  <div class="column1">
+      <form action="/play" method="post">
+    <button class ="weaponbuttons" type="submit" name="choose" value="Paper" style="
+    background: transparent;
+    border: none;
+">
       <img height="150px" width="150px" src="/images/paper_rps.svg" alt="Paper">
     </button>
   </form>
-</div>
-<div class="grid-item">
-  <form action="/play" method="post">
-    <button class ="weaponbuttons" type="submit" name="choose" value="Scissors">
+  </div>
+   <div class="column1">
+    <form action="/play" method="post">
+    <button class ="weaponbuttons" type="submit" name="choose" value="Scissors" style="
+    background: transparent;
+    border: none;
+">
       <img height="150px" width="150px" src="/images/scissors_rps.svg" alt="Scissors">
     </button>
   </form>
-</div>
-<div class="grid-item">
-  <form action="/play" method="post">
-    <button class ="weaponbuttons" type="submit" name="choose" value="Lizard">
+  </div>
+  <div class="column1">
+    <form action="/play" method="post">
+    <button class ="weaponbuttons" type="submit" name="choose" value="Lizard" style="
+    background: transparent;
+    border: none;
+">
       <img height="150px" width="150px" src="/images/lizard_rps.svg" alt="Lizard">
     </button>
   </form>
-</div>
-<div class="grid-item">
-  <form action="/play" method="post">
-    <button class ="weaponbuttons" type="submit" name="choose" value="Spock">
+  </div>
+   <div class="column1">
+     <form action="/play" method="post">
+    <button class ="weaponbuttons" type="submit" name="choose" value="Spock" style="
+    background: transparent;
+    border: none;
+">
       <img height="150px" width="150px" src="/images/spock_rps.svg" alt="Spock">
     </button>
   </form>
+  </div>
 </div>
-</div>
-</section>
-    
+
 </body>
 </html>
