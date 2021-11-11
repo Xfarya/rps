@@ -14,7 +14,7 @@ and <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cs
 Capybara, Sinatra and RSpec used for testing.
 
 ## Heroku
-This website is deployed <a href="https://rps-by-farya.herokuapp.com/" target="_blank" >here</a>
+This website is deployed <a href="https://rps-by-farya.herokuapp.com/" target="_blank" >here</a>.
 
 ## FEATURES & FUNCTIONALITY 
 
