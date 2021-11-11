@@ -10,18 +10,18 @@
      />
   </head>
 <body>
-
+<hr>
 <div class="row">
   <div class="column">
      <div class ="play">
     <% if @player.name == "" %> Anonymous vs. Computer
     <%else %> <%= @player.name %> vs. Computer <%end%> 
   </div>
-  <div><a href = "/">New player?</a></div>
+  <div><a href = "/">new player?</a></div>
   </div>
   <div class="column">
     <div class ="play">
-       <%= @opp %>
+       <div style="color: white; background: black; border-radius:20px;"><%= @opp %></div>
     </div>
   </div>
 </div>
@@ -81,14 +81,14 @@
 
 <hr>
 <div class="row" style="font-size:40px">
-  <div class="column">
+  <div style ="background:pink; border-radius:20px;" class="column">
     <% if @player.name == "" %> 
-      You chose <%= @choice %>
+      You <span style="font-size:20px">chose </span> <img height="150px" width="150px" src="/images/<%= @game.choice %>_rps.svg"> 
     <%else %> 
     <%= @player.name %> <span style="font-size:20px">chose </span> <img height="150px" width="150px" src="/images/<%= @game.choice %>_rps.svg"> 
 <%end %>
   </div>
-  <div class="column">
+  <div style ="background:pink; border-radius:20px;" class="column">
      Computer <span style="font-size:20px">chose </span>  <img height="150px" width="150px" src="/images/<%= @opp_choice %>_rps.svg"> 
   </div>
 </div>

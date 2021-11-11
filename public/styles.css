@@ -65,3 +65,25 @@ button.weaponbuttons:focus {
 .hands {
   margin-bottom: 20px;
 }
+
+a {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.nameform {
+  background: orange;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+input.nameform:focus {
+  color: white;
+  outline: 1px solid black !important;
+}
+
+.playbutton {
+  background: none;
+  outline: none;
+  border: none;
+}

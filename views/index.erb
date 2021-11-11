@@ -10,18 +10,21 @@
      />
  </head>
 <body>
-
+<hr>
 <div class="row">
  <div class="column">
       <div class = "name"><div>enter your name here</div>
   <form id='game'action="/names" method="post">
     <input class="nameform" type = "text" name="player">
-    <input class="nameform" type="submit" value="Submit">
+      <input class ="playbutton" type="submit" value="go">
   </form></div>
   </div>
   <div class="column">
     <div class ="play">
-      Let's Play!
+      <form id='game'action="/names" method="post">
+    <input style="display:none" type = "text" name="player">
+      <input class ="playbutton" style="color: white; background: black; border-radius:20px; width: 565px;" type="submit" value="Let's Play!">
+  </form></div>
     </div>
   </div>
 </div>
