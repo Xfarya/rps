@@ -80,11 +80,15 @@ A winner will be declared.
 
 I implemented the MVC model, following this planning process in completing each user story
 
+<img width="578" alt="Screenshot 2021-11-11 at 10 43 17" src="https://user-images.githubusercontent.com/76533997/141284667-14c82d14-b2b4-4aa9-aa50-e64669e8238c.png">
+
 ----------
 
 ## Routes
 
 These are all the routes this app uses
+
+<img width="576" alt="Screenshot 2021-11-11 at 10 44 50" src="https://user-images.githubusercontent.com/76533997/141284831-948272b1-128b-4c72-9b4e-f17d9a2fa277.png">
 
 ---------
 ## TESTING
