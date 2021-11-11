@@ -88,7 +88,7 @@ I implemented the MVC model, following this planning process in completing each 
 
 These are all the routes this app uses
 
-<img width="576" alt="Screenshot 2021-11-11 at 10 44 50" src="https://user-images.githubusercontent.com/76533997/141284831-948272b1-128b-4c72-9b4e-f17d9a2fa277.png">
+<img width="578" alt="Screenshot 2021-11-11 at 11 08 51" src="https://user-images.githubusercontent.com/76533997/141288236-84c74a48-afbf-4baf-a3fa-190b3394200f.png">
 
 ---------
 ## TESTING
