@@ -99,6 +99,32 @@ Run
   <code>rspec</code>
 within the rps directory.
 
+### Tests
+
+<img width="386" alt="Screenshot 2021-11-11 at 18 14 42" src="https://user-images.githubusercontent.com/76533997/141348537-d81ef8e0-2366-4e62-a908-31ba65b46252.png">
+
+#### Feature tests
+
+Scenario: Player wants to enter the game using a name of their choosing.  
+Feature: Fill, submit and view own name.  
+
+Scenario: Player wants to play game anonymous.  
+Feature: Click button and begin play.  
+
+Scenario: Player wants to choose a specific hand.  
+Feature: Clicking on specific hand allows user to choose item.  
+
+Scenario: Player wants to know opponent's choice.  
+Feature: Opponent's choice appears at once after player has made their choice.  
+ 
+#### RSpec Tests
+
+Player class should receive Player name input and return Player object with name.
+
+Game class takes input of player choice, decides random opponent selection and returns a winner based on game logic.
+
+-----------
+
 ## INSTALL & RUN
 
 ### Install this app
