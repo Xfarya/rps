@@ -1,16 +1,14 @@
-# frozen_string_literal: true
+source 'https://rubygems.org'
 
-source "https://rubygems.org"
-ruby "3.0.0"
-git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
-
-
-gem 'rspec'
 gem 'sinatra'
-gem 'capybara'
-gem 'simplecov', require: false
-gem 'simplecov-console', require: false
-gem 'rubocop'
-gem 'sinatra-contrib'
+
+group :test do
+  gem 'capybara'
+  gem 'rspec'
+  gem 'rubocop'
+  gem 'simplecov', require: false
+  gem 'simplecov-console', require: false
+  gem 'sinatra-contrib'
+end
 
 gem 'bootstrap', '~> 4.3.1'

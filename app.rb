@@ -1,6 +1,5 @@
 require "sinatra"
-require "sinatra/reloader"
-require "sinatra/base"
+require 'sinatra/reloader' if development?
 require "./lib/game"
 require "./lib/player"
 
