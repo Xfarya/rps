@@ -1,1 +1,1 @@
-web: bundle exec rackup -p 9292
+web: bundle exec rackup config.ru -p $PORT
