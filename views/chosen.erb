@@ -13,21 +13,20 @@
 
 <div class="row">
   <div class="column">
-      <div class = "name"><div>enter your name here</div>
-  <form id='game'action="/names" method="post">
-    <input class="nameform" type = "text" name="player">
-    <input class="nameform" type="submit" value="Submit">
-  </form></div>
-  </div>
-  <div class="column">
      <div class ="play">
     <% if @player.name == "" %> Anonymous vs. Computer
     <%else %> <%= @player.name %> vs. Computer <%end%> 
   </div>
+  <div><a href = "/">New player?</a></div>
+  </div>
+  <div class="column">
+    <div class ="play">
+       <%= @opp %>
+    </div>
   </div>
 </div>
-
-<div class="row">
+<hr>
+<div class="row hands">
   <div class="column1">
   <form action="/play" method="post">
     <button class ="weaponbuttons" type="submit" name="choose" value="Rock" style="
@@ -80,26 +79,20 @@
   </div>
 </div>
 
-<div class="row">
+<hr>
+<div class="row" style="font-size:40px">
   <div class="column">
     <% if @player.name == "" %> 
       You chose <%= @choice %>
     <%else %> 
-    <span class = "b1"><%= @player.name %> </span> chose <img height="150px" width="150px" src="/images/<%= @game.choice %>_rps.svg"> 
+    <%= @player.name %> <span style="font-size:20px">chose </span> <img height="150px" width="150px" src="/images/<%= @game.choice %>_rps.svg"> 
 <%end %>
   </div>
   <div class="column">
-     Your opponent chose <img height="150px" width="150px" src="/images/<%= @opp_choice %>_rps.svg"> 
+     Computer <span style="font-size:20px">chose </span>  <img height="150px" width="150px" src="/images/<%= @opp_choice %>_rps.svg"> 
   </div>
 </div>
 
-
- <div class="column2">
-     <%= @opp %>
-  </div>
-<div class="column2">
-   <a href = "/play">Play Again?</a>
-  </div>
-
+<hr>
 </body>
 </html>
