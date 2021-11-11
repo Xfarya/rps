@@ -12,3 +12,9 @@ group :test do
 end
 
 gem 'bootstrap', '~> 4.3.1'
+
+gem 'thin'
+gem 'puma'
+gem 'reel'
+gem 'http'
+gem 'webrick'
