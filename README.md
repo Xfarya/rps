@@ -110,8 +110,8 @@ Run <code>gem install bundler</code> if required, then:
 
 -----------
 ### Run
-Run <code>ruby app.rb</code> from directory
+Run <code>rackup</code> from directory
 
-Open a browser to http://localhost:4567/  
+Open a browser to http://localhost:9292
 
 -----------
