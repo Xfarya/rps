@@ -31,9 +31,11 @@ class Game
       "rock" => "scissors",
       "lizard" => "spock", 
       "scissors" => "paper", 
-      "paper" => "rock" 
+      "paper" => "rock", 
     }
-
+    p @choice
+    p "hi"
+    p winning[@choice]
    if winning[@choice] == @opponent 
       "You win!"      
    elsif  @choice == @opponent
