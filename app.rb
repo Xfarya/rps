@@ -1,4 +1,4 @@
-require 'sinatra/base'
+# require 'sinatra/base'
 require "sinatra"
 require "sinatra/reloader"
 require "./lib/game"
