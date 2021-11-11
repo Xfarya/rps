@@ -8,7 +8,7 @@ class Game
   end
 
   def opponent_choice
-     @opponent = ["Rock", "Paper", "Scissors", "Spock", "Lizard"].sample
+     @opponent = ["rock", "paper", "scissors", "spock", "lizard"].sample
   end
 
 
@@ -22,16 +22,16 @@ class Game
 
   def winner
     winning = { 
-      "Spock" => "Rock", 
-      "Paper" => "Spock",  
-      "Lizard" => "Paper", 
-      "Scissors" => "Lizard", 
-      "Spock" => "Scissors", 
-      "Rock" => "Lizard", 
-      "Rock" => "Scissors",
-      "Lizard" => "Spock", 
-      "Scissors" => "Paper", 
-      "Paper" => "Rock" 
+      "spock" => "rock", 
+      "paper" => "spock",  
+      "lizard" => "paper", 
+      "scissors" => "lizard", 
+      "spock" => "scissors", 
+      "rock" => "lizard", 
+      "rock" => "scissors",
+      "lizard" => "spock", 
+      "scissors" => "paper", 
+      "paper" => "rock" 
     }
 
    if winning[@choice] == @opponent 
