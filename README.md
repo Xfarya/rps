@@ -3,7 +3,7 @@
 <a href="#features">Features</a> ||
 <a href="#planning">Planning</a> ||
 <a href="#testing">Tests</a> ||
-<a href="#run">Play</a> ||
+<a href="#run">Play</a> ||</div>
             <hr>
 
 <img width="1357" alt="gameboard" src="https://user-images.githubusercontent.com/76533997/141277221-6350cc84-2489-4f5d-a88e-df82ee64732f.png">
